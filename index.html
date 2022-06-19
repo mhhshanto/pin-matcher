@@ -42,18 +42,19 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <button id="btn" onclick="verifyPin()" type="submit" class="submit-btn">Submit</button>
+                                <p id="tryy" class="action-left"> <span id="try-left">3</span> try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="failed" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
+    <p id="fail-count">1</p>
     <script src="app.js"></script>
 </body>
 </html>
